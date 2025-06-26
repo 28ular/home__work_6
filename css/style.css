@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+}
+
+.bmw img {
+    width: 550px;
+    height: 300px;
+}
+.mers img {
+    width: 450px;
+    height: 300px;
+}
+.lexus img {
+    width: 450px;
+    height: 300px;
+}
+#cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cars label:has(input[type="radio"]:checked) {
+    background: red;
+    color: black;
+    box-shadow: 0 0  25px red;
+    border-radius: 5px;
+}
+
+#cars input[type='radio'] {
+    display: none;
+}
+#cars label {
+    font-size: 35px;
+    font-weight: 600;
+}
+.cars__item {
+    margin-top: 30px;
+}
+.bmw {
+    gap: 18px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+
+}
+.bmw span {
+    color: #0015ff;
+    font-size: 50px;
+}
+.bmw p {
+    color: #1558bd;
+    font-size: 20px;
+
+}
+
+
+.mers {
+    gap: 18px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+
+}
+.mers span {
+    color: grey;
+    font-size: 50px;
+}
+.mers p {
+    color: lightslategrey;
+    font-size: 20px;
+
+}
+
+.mers img {
+    width: 550px;
+    height: 300px;
+}
+
+.lexus{
+    gap: 18px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 500px;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+
+}
+.lexus span {
+    color: gold;
+    font-size: 50px;
+}
+.lexus p  {
+    color: rgba(218, 165, 32, 0.93);
+    font-size: 20px;
+
+}
+
+.lexus img {
+    width: 550px;
+    height: 300px;
+}
